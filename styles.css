@@ -1,1 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Workbench&display=swap');
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+  --color-purple: #BB9CF1;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: black;
+  margin: 0;
+}
+
+body::before{
+  content:"";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-purple);
+  background-image: linear-gradient(to top, rgba(187	156	241), rgb(156	111	235));
+}
+
+h1{
+  font-family: 'Workbench', sans-serif;
+  
+}
 
