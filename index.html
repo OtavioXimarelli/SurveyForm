@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Project</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title">Surrvey project for FreeCodeCamp project</h1>
+                <p id="description">Thank for taking the time to help with this survey, </p>
+            </header>
+            <form id="survey-form">
+                <!--SEMPRE USAR DIV PARA AGRUPAR ELEMENTOS DO MESMO "TIPO"; SEPARAR POR BLOCOS-->
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Please enter you name" required>
+                </div>
 
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your best Email :)" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="number" id="number-label">Age<span class="clue"> (optional)</span></label>
+                    <input type="number" id="number" name="age" min="10" max="100" class="form-control" placeholder="Age">
+                </div>
+
+                <div class="form-group">
+                    <p>Which option describe your actual role?</p>
+                    <select name="role" id="dropdown" class="form-control" required>
+                        <option disabled selected value="">Select a role</option>
+                        <option value="Job">Full time job</option>
+                        <option value="student">Student</option>
+                        <option value="learner">Full time learner</option>
+                        <option value="prefNotSay">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>How much time you spend on the internet daily?</p>
+                    <label><input type="radio" name="user-usage" class="input-radio" value="onehour">One Hour</label>
+                    <label><input type="radio" name="user-usage" class="input-radio" value="twohours">Two Hours</label>
+                    <label><input type="radio" name="user-usage" class="input-radio" value="twohrs+">More than two hours</label>
+                </div>
+
+                <div class="form-group">
+                    <p>Whats is your more time consuming social app?</p>
+                    <select name="social-cons" id="socialCons" class="form-control" required>
+                        <option disabled selected value="">Please, selecet one option</option>
+                        <option value="insta">Instagram</option>
+                        <option value="face">Facebook</option>
+                        <option value="thread">Threads</option>
+                        <option value="zap">Whatsapp</option>
+                        <option value="twitter">X (former Twitter)</option>
+                        <option value="reddit">Reddit</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>
+                        How do you use the most part of your internet time?
+                        <span class="clue">(check all that apply)</span>
+                    </p>
+                    <label><input type="checkbox" name="timeuse" value="for work" class="input-checkbox">For work</label>
+                    <label><input type="checkbox" name="timeuse" value="For study" class="input-checkbox">For study</label>
+                    <label><input type="checkbox" name="timeuse" value="for entertainment" class="input-checkbox">For entertainment</label>
+                    <label><input type="checkbox" name="timeuse" value="for socialmedia" class="input-checkbox">For social media apps</label>
+                    <label><input type="checkbox" name="timeuse" value="for self-improve" class="input-checkbox">For self-improvement</label>
+                </div>
+                
+                <div class="form-group">
+                    <p>Any comment or sugestion?</p>
+                    <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your coomments here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submmit-button">Submit!</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
