@@ -81,7 +81,7 @@ button{
   margin: 1.6rem auto 0 auto;
 }
 
-footer{
+.credit{
   font-family: 'DM Serif Display', serif;
   font-size: 18px;
   color: #6f0d8d;
@@ -92,9 +92,14 @@ a{
   color: #080674;
 }
 
-footer,a{
+.credit, a{
   text-shadow: 0.5px 0.5px 15px rgb(44, 3, 44);
 
+}
+
+.credit{
+  font-size: 12px;
+  text-align: right;
 }
 
 @media (min-width: 576px){
