@@ -6,4 +6,4 @@ Project created for FreeCodeCamp HTML certification, feel free to use for inspir
 Let's go code :)
 
 If you want to see the final resul live, see the link bellow:
-https://survey-form-three-beta.vercel.app/
+https://form-otavio-beta.vercel.app/
